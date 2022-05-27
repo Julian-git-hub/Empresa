@@ -1,0 +1,168 @@
+body {
+    background-color: black;
+    font-family: sans-serif;
+}
+
+.container {
+    margin: auto;
+    background-color: gray;
+    width: 800px;
+    padding: 30px;
+}
+
+ul, li{
+    margin: 0%;
+    padding: relative;
+    list-style: none;
+}
+
+ul.slyder{
+    position: relative;
+    width: 800px;
+    height: 300px;
+}
+
+ul.slyder li{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    background-color: white;
+    transition: opacity .5s;
+}
+
+ul.slyder li img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+ul.slyder li:first-child{
+    opacity: 1;    
+}
+
+ul.slyder li:target{
+    opacity: 1;
+}
+
+.menu{
+    text-align: center;
+    margin: 20px;
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a{
+    text-decoration: none;
+    font-size: 2em;
+    color: wheat;
+    margin-top: 100%;
+}
+
+nav{
+    margin: 100px;
+    outline: 1px solid red;
+}
+
+.menu2{
+    list-style: none;
+    padding: 0;
+    margin: 0px;
+    background: #2e2e2a;
+    line-height: 40px;
+    text-align: center;
+    margin: auto;
+}
+
+.horizontal{
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+}
+
+.texxto{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    background: white;
+    color: #000;
+}
+.testing{
+    
+    color: white;
+    text-align: center;
+    height: 50%;
+    margin: 5%;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+p {
+    text-align: center;
+    color: white;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.form-contact {
+    background-color: rgba(255, 0, 0, 0.753);
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: black
+}
+
+header{
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+    color: white;
+}
+
+header span {
+    font-size: 100px;
+    display: block;
+    text-align: center;
+    padding: 2.5rem;
+}
+
+.contact {
+    padding: .8rem;
+    overflow: hidden;
+    color: grey;
+}
+
+.contact label, .contact input, .contact textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.contact label {
+    font-weight: 700;
+}
+
+.contact input, .contact textarea {
+    border: none;
+    border-bottom: 2px solid blue;
+    margin-bottom: 10px ;
+    font-size: 20px;
+}
